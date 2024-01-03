@@ -37,6 +37,7 @@
       </header>
 
       <div class="container container__hero">
+       <div class="container__wrapper">
         <h1 class="hero__header">CAR SHARING</h1>
         <p class="hero__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -48,6 +49,7 @@
           <a class="hero__button hero__button--first" href="#">SHARE A CAR</a>
           <a class="hero__button hero__button--second" href="#">KEY FEATURES</a>
         </div>
+       </div>
         <a class="hero-button--arrow" href="#"
           ><img src="images/Icon Arrow Down.png" alt="arrow pointing down"
         /></a>
@@ -58,10 +60,10 @@
       
       <div class="container blog__container">
         <h2 class="blog__header"><span>BLOG</span></h2>
-        <div class="articles">
-          <article class="article">
+        <div class="blog__articles">
+          <article class="blog__article">
             <img class="blog__image" src="images/photo1.png" alt="gearbox" />
-            <h3 class="blog__title">LOREM IPSUM DOLOR</h3>
+            <h3 class="blog__title">LOREM IPSUM SIT DOLOR</h3>
             <p class="blog__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -69,9 +71,9 @@
             <a class="blog__button" href="#">READ MORE</a>
           </article>
   
-          <article class="article">
+          <article class="blog__article">
             <img class="blog__image" src="images/photo2.png" alt="ford mustang" />
-            <h3 class="blog__title">LOREM IPSUM DOLOR</h3>
+            <h3 class="blog__title">LOREM IPSUM SIT DOLOR</h3>
             <p class="blog__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,9 +81,9 @@
             <a class="blog__button" href="#">READ MORE</a>
           </article>
   
-          <article class="article">
+          <article class="blog__article">
             <img class="blog__image" src="images/photo3.png" alt="engine" />
-            <h3 class="blog__title">LOREM IPSUM DOLOR</h3>
+            <h3 class="blog__title">LOREM IPSUM SIT DOLOR</h3>
             <p class="blog__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -97,8 +99,8 @@
       
         <div class="container service__container">
           <h2 class="service__header">SERVICE</h2>  
-          <div class="articles">
-            <article class="article">
+          <div class="service__articles">
+            <article class="service__article">
               <img class="service__image" src="images/mini1.png" alt="gearbox" />
               <h3 class="service__title">LOREM IPSUM SIT DOLOR</h3>
               <p class="service__paragraph">
@@ -107,7 +109,7 @@
               <a class="service__button" href="#">READ MORE</a>
                 </article>
     
-                <article>
+                <article class="service__article">
                     <img class="service__image" src="images/mini2.png" alt="gearbox" />
               <h3 class="service__title">LOREM IPSUM SIT DOLOR</h3>
               <p class="service__paragraph">
@@ -116,7 +118,7 @@
               <a class="service__button" href="#">READ MORE</a>
                 </article>
     
-                <article>
+                <article class="service__article">
                     <img class="service__image" src="images/mini3.png" alt="steering wheel" />
               <h3 class="service__title">LOREM IPSUM SIT DOLOR</h3>
               <p class="service__paragraph">
@@ -125,7 +127,7 @@
               <a class="service__button" href="#">READ MORE</a>
                 </article>
     
-                <article>
+                <article class="service__article">
                     <img class="service__image" src="images/mini4.png" alt="gearbox" />
               <h3 class="service__title">LOREM IPSUM SIT DOLOR</h3>
               <p class="service__paragraph">
@@ -141,15 +143,45 @@
         <h2 class="contact__header">CONTACT</h2>
         <div class="container contact__container">
             <img class="contact_image" src="images/Form Photo.png" alt="two cars from above">
-        <form>
+        <form class="contact__form">
             <input type="text" name="name" placeholder="Type your name">
             <input type="email" name="email" placeholder="Type your e-mail">
             <textarea placeholder="Type your message"></textarea>
-            <button type="submit">SEND</button>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span></span>
+              I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+            </label>
+            <button class="contact__button" type="submit">SEND</button>
         </form>
         </div>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <img src="images/Icon Icon Logo Normal.png" alt="logo">
+          <p>CAR</p>
+          <p>SHARING</p>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__column--first">
+            <a href="#">HOME PAGE</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">GALLERY</a>
+            <a href="#">SHARE REGULATION</a>
+          </div>
+          <div class="footer__column--second">
+            <a href="#">PRICE</a>
+            <a href="#">OUR FLEET</a>
+            <a href="#">OUR CLIENTS</a>
+            <a href="#">CONTACT</a>
+          </div>
+          <div class="footer__credits">
+            <span>Copyright &copy; Coders Lab</span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
